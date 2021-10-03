@@ -46,7 +46,7 @@ function result(){
                 `
                 <div class="flex relative h-24 w-24 rounded-full bg-gray-100 shadow-lg text-center justify-center items-center">
                     <p class="text-sm p-1">SHAT</p>
-                    <button class="theResult z-20 h-24 w-24 border-4 shadow-2xl absolute bg-red-300 rounded-full shadow-lg text-white text-xs top-0 right-0 left-0 bottom-0">Tap to Shat or Pass</button>
+                    <button class="theResult z-20 h-24 w-24 border-4 shadow-2xl absolute bg-red-300 rounded-full  text-white text-xs top-0 right-0 left-0 bottom-0">Tap to Shat or Pass</button>
                     <div class="z-10 h-16 w-16 rounded-full bg-white animate-ping absolute ">
 
                     </div>
@@ -79,7 +79,7 @@ function result(){
                 `
                 <div class="flex relative h-24 w-24 rounded-full bg-gray-100 shadow-lg text-center justify-center items-center">
                     <p class="text-sm p-1">PASS</p>
-                    <button class="theResult z-20 h-24 w-24 border-4 shadow-2xl absolute bg-red-300 rounded-full shadow-lg text-white text-xs top-0 right-0 left-0 bottom-0">Tap to Shat or Pass</button>
+                    <button class="theResult z-20 h-24 w-24 border-4 shadow-2xl absolute bg-red-300 rounded-full  text-white text-xs top-0 right-0 left-0 bottom-0">Tap to Shat or Pass</button>
                     <div class="z-10 h-16 w-16 rounded-full bg-white animate-ping absolute ">
 
                     </div>
