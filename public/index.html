@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagay Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class=" bg-gray-900 text-gray-100">
+    <div class="m-5  xl:mx-64 lg:mx-32 md:mx-32  mx-6 ">
+        <div class="flex justify-between relative pb-5">
+            <div id="aboutBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+            </div>
+       
+              <div>
+                <audio src="https://cdn.pixabay.com/audio/2020/10/10/audio_5e3fc04cc1.mp3" id="audio"></audio>
+                <button class="outline-none " id="playAudio">
+                    <div  class="hidden relative " id="toPlay">
+                        <div class="animate-ping flex justify-center items-center absolute h-7 w-7 z-30 rounded-full bg-red-400 opacity-75"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                          </svg>
+                    </div>
+                    <div class="relative outline-none " id="toPause">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 z-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                          </svg>
+                    </div>
+                      
+                </button> 
+            </div>
+     
+        </div>
+        <div class="bg-gray-100 transition-all delay-1000 transform hidden z-50 h-full w-full absolute top-0 right-0 left-0 bottom-0" id="about">
+            <div class="transition duration-500 ease-in-out">
+                <div class="flex justify-end p-2" id="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </div>
+                <div class="px-10 text-gray-800 flex justify-center bg-no-repeat bg-center bg-contain text-center font-bold text-2xl" style="background-image: url(img/undraw_Having_fun_re_vj4h.svg);">
+                    <div class="w-72">
+                        <p class="pb-10">ABOUT</p>
+                        <div  class=" px-4 bg-white bg-opacity-75 shadow-2xl rounded-lg">
+                            <div  class="text-sm text-gray-700 py-5 text-justify">
+                                <p>Tagay card is a straightforward game with three distinct categories. The (Truth or Dare) comes first, followed by (Name a thing, a place, a name, an animal), and finally the Shat or Pass.</p>
+                                <p>Every category has its own set of regulations, which may be found in the top-right corner. If you wish to, you can also establish your own rules.</p>
+                                <p class="text-red-500 text-xs py-5">This is solely for entertainment purposes. Some of the visuals and music were taken from various sources, and no copyright infringement was intended. All credit goes to the original owner!</p>
+                            </div>
+                            <div class="flex text-gray-700 items-end  absolute bottom-0 right-0 left-0 justify-center fixed">
+                                <div class="twitter mt-10 w-8 h-8 flex justify-center items-center text-xl">
+                                    <i class="fab fa-facebook-f text-md "></i>
+                                </div>
+                                <div class="twitter mt-10 w-8 h-8 flex justify-center items-center text-xl">
+                                    <i class="fab fa-twitter text-md "></i>
+                                </div>
+                                <div class="twitter mt-10  w-8 h-8 flex justify-center items-center text-xl">
+                                    <i class="fab fa-instagram text-md "></i>
+                                </div>
+                                <div class="twitter mt-10 w-8 h-8 flex justify-center items-center text-xl">
+                                    <i class="fab fa-github text-md "></i>
+                                </div>
+                                <div class="twitter mt-10 w-8 h-8 flex justify-center items-center text-xl">
+                                    <i class="fab fa-linkedin text-md "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-base text-left pt-5">
+                            <p>Contributors List:</p>
+                        </div>
+                    
+                    
+                    </div>
+                    
+                </div>
+            </div>
+          
+        </div>
+       
+        <div class="flex justify-center  text-center mt-5">
+            <div class="h-16">
+                <img class="h-full w-full" src="img/undraw_beer_xg5f.svg" alt="">
+            </div>
+           
+            <h1 class="text-white font-bold text-2xl md:text-3xl border-b-2 shadow-md border-r-2 pr-2  text-yellow-200 flex items-center">TAGAY CARD</h1>
+        </div>
+        <div class=" pt-20 flex justify-center items-center">
+            <div class="text-gray-900 text-2xl grid gap-7">
+                <div>
+                    <a href="truthDare.html"><button class="w-44 py-2 rounded-full animate-pulse" style="background: rgb(255,104,104);
+                        background: linear-gradient(90deg, rgba(255,104,104,1) 0%, rgba(255,209,75,1) 50%, rgba(0,214,159,1) 100%);">Truth or Dare</button></a>
+                </div>
+                <div>
+                   <a href="nameA.html"><button class="w-44 py-2 rounded-full animate-pulse" style="background: rgb(0,214,159);
+                    background: linear-gradient(90deg, rgba(0,214,159,1) 0%, rgba(255,104,104,1) 50%, rgba(255,209,75,1) 100%);">Name A</button></a> 
+                </div>
+               <div>
+                   <a href="shatPass.html"><button class="w-44 py-2 rounded-full animate-pulse" style="background: rgb(255,209,75);
+                    background: linear-gradient(90deg, rgba(255,209,75,1) 0%, rgba(0,214,159,1) 50%, rgba(255,104,104,1) 100%);">Shat or Pass</button></a> 
+               </div>
+            </div> 
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="relative ">
+                <img class="z-10" src="img/Happy Bunch - Color.png" alt="">
+                <div class="absolute z-20 top-0 right-0 bottom-0 left-0 flex justify-center items-center">
+                    <p class="text-3xl text-center text-yellow-200 bg-opacity-50 px-3 py-2 bg-gray-700 rounded-bl-full animate-bounce rounded-tr-full font-bold">LETS GET DRUNK</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
