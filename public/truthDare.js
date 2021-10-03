@@ -36,14 +36,14 @@ const truthDare = [
     const truthDareIndex = randomTruthDare[Math.floor(Math.random() * randomTruthDare.length)]
     randomEvent.innerHTML = 
     `
-    <div class="bg-gray-600 bg-white relative  shadow-2xl flex relative justify-center h-96 rounded-md z-30 w-full absolute  left-0  px-2" >
+    <div class="bg-gray-600 relative  shadow-2xl flex justify-center h-96 rounded-md z-30 w-full  left-0  px-2" >
        
        <div class="">
            <div>
             <h2 class="flex justify-center text-2xl font-semibold text-red-400 border-b-4 border-yellow-200 border-dashed mx-6 md:mx-20 py-6">${truthDareIndex.type}</h2>
            </div>
            <div class="absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center  w-full h-full">    
-            <p class="text-white text-center  flex justify-center px-3 font-medium pt-2 px-1  text-lg flex items-center justify-center">${truthDareIndex.content}</p> 
+            <p class="text-white text-center  flex justify-center px-3 font-medium pt-2   text-lg  items-center ">${truthDareIndex.content}</p> 
            </div>
        
        </div> 
